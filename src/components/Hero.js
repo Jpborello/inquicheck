@@ -54,7 +54,18 @@ export default function Hero() {
                     </p>
 
                     <div className="flex gap-md">
-                        <Link href="/login" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
+                        <Link href="/login" className="btn" style={{
+                            padding: '1rem 2rem',
+                            fontSize: '1.1rem',
+                            background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+                            color: 'white',
+                            textDecoration: 'none',
+                            borderRadius: 'var(--radius-md)',
+                            fontWeight: 600,
+                            boxShadow: '0 4px 16px rgba(245, 158, 11, 0.4)',
+                            border: 'none',
+                            transition: 'all 0.2s'
+                        }}>
                             Solicitar Informe
                         </Link>
                         <Link href="#como-funciona" className="btn btn-outline">

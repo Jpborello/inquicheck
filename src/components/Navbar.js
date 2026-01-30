@@ -4,18 +4,21 @@ export default function Navbar() {
     return (
         <nav style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '1rem 0' }}>
             <div className="container flex justify-between items-center">
-                <Link href="/" className="logo">
-                    {/* Simple Icon placeholder */}
-                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    InquiCheck
+                <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <img
+                        src="/logo-transparent.png"
+                        alt="InquiCheck Logo"
+                        style={{
+                            height: '45px',
+                            width: 'auto'
+                        }}
+                    />
                 </Link>
 
                 <div className="flex items-center gap-md">
                     <div className="flex gap-md" style={{ fontSize: '0.9rem' }}>
                         <Link href="#como-funciona">Cómo Funciona</Link>
-                        <Link href="#planes">Planes</Link>
+                        <Link href="/pricing">Planes</Link>
                         <Link href="#faq">Preguntas Frecuentes</Link>
                     </div>
 

@@ -3,10 +3,78 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { supabase } from '@/lib/supabaseClient';
 import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import TermsModal from '@/components/TermsModal';
 
 export default function DashboardLayout({ children }) {
     const pathname = usePathname();
     const router = useRouter();
+    const [showTermsModal, setShowTermsModal] = useState(false);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        checkTermsAcceptance();
+    }, []);
+
+    const checkTermsAcceptance = async () => {
+        try {
+            const { data: { user } } = await supabase.auth.getUser();
+            if (!user) {
+                router.push('/login');
+                return;
+            }
+
+            // Check if agency has accepted terms
+            const { data: agency, error } = await supabase
+                .from('agencies')
+                .select('terms_accepted_at')
+                .eq('id', user.id)
+                .single();
+
+            if (error) {
+                console.error('Error checking terms:', error);
+                setLoading(false);
+                return;
+            }
+
+            // Show modal if terms not accepted
+            if (!agency?.terms_accepted_at) {
+                setShowTermsModal(true);
+            }
+
+            setLoading(false);
+        } catch (err) {
+            console.error('Error in checkTermsAcceptance:', err);
+            setLoading(false);
+        }
+    };
+
+    const handleAcceptTerms = async () => {
+        try {
+            const { data: { user } } = await supabase.auth.getUser();
+            if (!user) return;
+
+            // Update agency record with acceptance date and version
+            const { error } = await supabase
+                .from('agencies')
+                .update({
+                    terms_accepted_at: new Date().toISOString(),
+                    terms_version: '1.0'
+                })
+                .eq('id', user.id);
+
+            if (error) {
+                console.error('Error saving terms acceptance:', error);
+                alert('Hubo un error al guardar. Por favor intenta nuevamente.');
+                return;
+            }
+
+            setShowTermsModal(false);
+        } catch (err) {
+            console.error('Error in handleAcceptTerms:', err);
+            alert('Hubo un error al guardar. Por favor intenta nuevamente.');
+        }
+    };
 
     const handleLogout = async () => {
         await supabase.auth.signOut();
@@ -19,8 +87,27 @@ export default function DashboardLayout({ children }) {
         { name: 'Perfil Agencia', href: '/dashboard/profile', icon: '🏢' },
     ];
 
+    if (loading) {
+        return (
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                minHeight: '100vh',
+                background: '#f8f9fa'
+            }}>
+                <div style={{ fontSize: '1.2rem', color: '#666' }}>
+                    ⏳ Cargando...
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div style={{ display: 'flex', minHeight: '100vh', background: '#f8f9fa' }}>
+            {/* Terms Modal */}
+            {showTermsModal && <TermsModal onAccept={handleAcceptTerms} />}
+
             {/* Sidebar */}
             <aside style={{
                 width: '260px',
@@ -31,7 +118,16 @@ export default function DashboardLayout({ children }) {
                 padding: '2rem 1rem'
             }}>
                 <div style={{ marginBottom: '3rem', paddingLeft: '1rem' }}>
-                    <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>InquiCheck</h2>
+                    <img
+                        src="/logo.png"
+                        alt="InquiCheck Logo"
+                        style={{
+                            height: '50px',
+                            width: 'auto',
+                            marginBottom: '0.5rem',
+                            filter: 'brightness(0) invert(1)' // Make logo white
+                        }}
+                    />
                     <p style={{ opacity: 0.7, fontSize: '0.875rem' }}>Panel Inmobiliaria</p>
                 </div>
 
