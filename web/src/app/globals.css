@@ -1,0 +1,126 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #1D3557;
+  /* Deep Blue - Header/Footer/Text */
+  --color-secondary: #457B9D;
+  /* Muted Blue - Subheaders/Icons */
+  --color-accent: #A8DADC;
+  /* Light Blue - Backgrounds/Decorations */
+  --color-background: #F1FAEE;
+  /* Off White - Main Background */
+  --color-action: #E63946;
+  /* Red/Orange - CTAs/Buttons */
+  --color-action-hover: #D62828;
+
+  /* Text Colors */
+  --color-text-main: #1D3557;
+  --color-text-light: #F1FAEE;
+  --color-text-muted: #666666;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --container-width: 1200px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-text-main);
+  background: var(--color-background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-action);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-action-hover);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-text-light);
+  color: var(--color-text-light);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+/* Logo / Brand Text */
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: white;
+  /* Often on blue header */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
