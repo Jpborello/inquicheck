@@ -8,7 +8,8 @@ export default function Hero() {
             display: 'flex',
             alignItems: 'center',
             overflow: 'hidden',
-            color: 'white'
+            color: 'white',
+            marginTop: '-2rem'
         }}>
 
             {/* Background Image with Blur/Fade */}
@@ -39,7 +40,7 @@ export default function Hero() {
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    background: 'linear-gradient(90deg, rgba(29, 53, 87, 0.95) 0%, rgba(29, 53, 87, 0.7) 50%, rgba(69, 123, 157, 0.2) 100%)'
+                    background: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 10%, rgba(29, 53, 87, 0.7) 30%, rgba(29, 53, 87, 0.95) 60%, rgba(29, 53, 87, 0.95) 100%)'
                 }}></div>
             </div>
 
