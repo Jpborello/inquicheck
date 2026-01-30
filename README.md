@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# InquiCheck
+
+System for real estate agencies to evaluate tenant scores. Built with Next.js 16.
 
 ## Getting Started
 
