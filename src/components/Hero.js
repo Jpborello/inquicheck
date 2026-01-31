@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <section style={{
             position: 'relative',
-            minHeight: '600px',
+            minHeight: '480px',
             display: 'flex',
             alignItems: 'center',
             overflow: 'hidden',
@@ -29,6 +29,7 @@ export default function Hero() {
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
+                        objectPosition: 'center 35%', // Muestra más la parte superior (caras)
                         filter: 'blur(2px)' // Slight blur as requested "difumine"
                     }}
                 />

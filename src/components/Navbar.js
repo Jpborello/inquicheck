@@ -16,7 +16,7 @@ export default function Navbar() {
                         src="/logo-nuevo.jpg"
                         alt="InquiCheck Logo"
                         style={{
-                            height: '70px',
+                            height: '100px',
                             width: 'auto'
                         }}
                     />
