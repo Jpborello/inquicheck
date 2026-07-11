@@ -1,4 +1,4 @@
-# InquiCheck - Documentación de Funcionalidades
+# InquiScore - Documentación de Funcionalidades
 
 > Plataforma de Verificación de Inquilinos | Sistema Completo de Evaluación Locativa
 
@@ -22,7 +22,7 @@
 
 #### Componentes:
 - **Navbar**
-  - Logo de InquiCheck con fondo transparente
+  - Logo de InquiScore con fondo transparente
   - Enlaces navegación: Cómo Funciona, Planes, Preguntas Frecuentes
   - Botón "Ingresar" al sistema
   
@@ -208,7 +208,7 @@
 #### Componentes Persistentes:
 
 **Sidebar (Azul Oscuro)**
-- Logo InquiCheck en blanco
+- Logo InquiScore en blanco
 - Texto: "Panel Inmobiliaria"
 - Navegación:
   - 👥 Mis Inquilinos → `/dashboard`
@@ -756,4 +756,4 @@ tenants (1) ------> (N) rental_history
 
 **Documento actualizado:** Enero 2026  
 **Versión del Sistema:** 1.0  
-**Autor:** InquiCheck Team
+**Autor:** InquiScore Team

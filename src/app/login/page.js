@@ -50,7 +50,7 @@ export default function LoginPage() {
                 maxWidth: '400px'
             }}>
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                    <h1 style={{ color: 'var(--color-primary)', fontSize: '1.75rem' }}>InquiCheck</h1>
+                    <h1 style={{ color: 'var(--color-primary)', fontSize: '1.75rem' }}>InquiScore</h1>
                     <p style={{ color: 'var(--color-secondary)' }}>Ingreso para Inmobiliarias</p>
                 </div>
 

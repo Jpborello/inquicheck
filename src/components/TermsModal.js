@@ -38,7 +38,7 @@ export default function TermsModal({ onAccept }) {
             }}>
                 {/* Header */}
                 <div style={{
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: '#000000',
                     color: 'white',
                     padding: '2rem',
                     borderTopLeftRadius: 'var(--radius-lg)',
@@ -46,13 +46,13 @@ export default function TermsModal({ onAccept }) {
                     textAlign: 'center'
                 }}>
                     <img
-                        src="/logo.png"
-                        alt="InquiCheck Logo"
+                        src="/logo-nuevo.jpg"
+                        alt="InquiScore Logo"
                         style={{
-                            height: '50px',
+                            height: '100px',
                             width: 'auto',
-                            marginBottom: '1rem',
-                            filter: 'brightness(0) invert(1)'
+                            marginTop: '-25px',
+                            marginBottom: '-15px'
                         }}
                     />
                     <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700 }}>
@@ -73,14 +73,14 @@ export default function TermsModal({ onAccept }) {
                     color: '#333'
                 }}>
                     <p style={{ marginBottom: '1.5rem', color: '#555' }}>
-                        Al acceder, registrarse o utilizar la plataforma <strong>InquiCheck</strong>, usted acepta de manera expresa, voluntaria e informada los presentes Términos y Condiciones.
+                        Al acceder, registrarse o utilizar la plataforma <strong>InquiScore</strong>, usted acepta de manera expresa, voluntaria e informada los presentes Términos y Condiciones.
                     </p>
 
                     <div style={{ marginBottom: '1.5rem' }}>
                         <h3 style={{ color: '#667eea', fontSize: '1.1rem', marginBottom: '0.75rem' }}>Puntos Clave:</h3>
                         <ul style={{ paddingLeft: '1.5rem', margin: 0 }}>
                             <li style={{ marginBottom: '0.5rem' }}>
-                                InquiCheck es una plataforma de evaluación locativa, <strong>no es una lista negra</strong>
+                                InquiScore es una plataforma de evaluación locativa, <strong>no es una lista negra</strong>
                             </li>
                             <li style={{ marginBottom: '0.5rem' }}>
                                 La información es <strong>estrictamente confidencial</strong> y de uso personal
@@ -108,7 +108,7 @@ export default function TermsModal({ onAccept }) {
                         marginBottom: '1.5rem'
                     }}>
                         <p style={{ margin: 0, fontSize: '0.9rem', color: '#755800' }}>
-                            <strong>⚠️ Importante:</strong> InquiCheck se reserva el derecho de auditar, corregir, suspender o eliminar registros ante irregularidades detectadas.
+                            <strong>⚠️ Importante:</strong> InquiScore se reserva el derecho de auditar, corregir, suspender o eliminar registros ante irregularidades detectadas.
                         </p>
                     </div>
 
@@ -150,7 +150,7 @@ export default function TermsModal({ onAccept }) {
                             }}
                         />
                         <span style={{ fontSize: '1rem', color: '#333', fontWeight: 500 }}>
-                            He leído y acepto los Términos y Condiciones de InquiCheck
+                            He leído y acepto los Términos y Condiciones de InquiScore
                         </span>
                     </label>
 

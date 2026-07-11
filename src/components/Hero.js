@@ -9,7 +9,7 @@ export default function Hero() {
             alignItems: 'center',
             overflow: 'hidden',
             color: 'white',
-            marginTop: '-2rem'
+            marginTop: '0'
         }}>
 
             {/* Background Image with Blur/Fade */}
@@ -41,7 +41,7 @@ export default function Hero() {
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    background: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 10%, rgba(29, 53, 87, 0.7) 30%, rgba(29, 53, 87, 0.95) 60%, rgba(29, 53, 87, 0.95) 100%)'
+                    background: 'linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 15%, rgba(29, 53, 87, 0.7) 40%, rgba(29, 53, 87, 0.95) 75%, rgba(29, 53, 87, 0.95) 100%)'
                 }}></div>
             </div>
 

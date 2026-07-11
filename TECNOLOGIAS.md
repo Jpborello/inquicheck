@@ -1,4 +1,4 @@
-# InquiCheck - Stack Tecnológico
+# InquiScore - Stack Tecnológico
 
 > Documentación completa de todas las tecnologías, librerías y herramientas utilizadas
 
@@ -331,7 +331,7 @@ npm run dev # Automáticamente usa Turbopack
 2. Vercel detecta cambios
 3. Build automático
 4. Deploy a producción
-5. URL: `inquicheck.vercel.app` (o dominio custom)
+5. URL: `inquiscore.vercel.app` (o dominio custom)
 
 **Variables de Entorno:**
 - `NEXT_PUBLIC_SUPABASE_URL`
@@ -729,4 +729,4 @@ inquiCheck/
 
 **Documento actualizado:** Enero 2026  
 **Stack Version:** 1.0  
-**Mantenedor:** InquiCheck Team
+**Mantenedor:** InquiScore Team

@@ -45,9 +45,9 @@ export default function AdminPage() {
 
     return (
         <div style={{ minHeight: '100vh', background: '#f8f9fa' }}>
-            <header style={{ background: '#333', color: 'white', padding: '1rem' }}>
+            <header style={{ background: '#000000', color: 'white', padding: '1rem' }}>
                 <div className="container flex justify-between items-center">
-                    <h1 style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>InquiCheck | Super Admin</h1>
+                    <h1 style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>InquiScore | Super Admin</h1>
                     <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>Panel de Control</span>
                 </div>
             </header>

@@ -64,7 +64,7 @@ export default function PricingPage() {
         <div style={{ minHeight: '100vh', background: '#f8f9fa' }}>
             {/* Header/Navbar */}
             <header style={{
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: '#000000',
                 color: 'white',
                 padding: '1.5rem 0',
                 boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
@@ -79,11 +79,13 @@ export default function PricingPage() {
                 }}>
                     <Link href="/" style={{ display: 'inline-block' }}>
                         <img
-                            src="/logo-transparent.png"
-                            alt="InquiCheck Logo"
+                            src="/logo-nuevo.jpg"
+                            alt="InquiScore Logo"
                             style={{
-                                height: '45px',
-                                width: 'auto'
+                                height: '90px',
+                                width: 'auto',
+                                marginTop: '-20px',
+                                marginBottom: '-20px'
                             }}
                         />
                     </Link>
@@ -430,7 +432,7 @@ export default function PricingPage() {
 
             {/* Footer */}
             <footer style={{
-                background: '#1a1a1a',
+                background: '#000000',
                 color: 'white',
                 padding: '3rem 2rem',
                 marginTop: '4rem'
@@ -441,13 +443,13 @@ export default function PricingPage() {
                     textAlign: 'center'
                 }}>
                     <img
-                        src="/logo.png"
-                        alt="InquiCheck Logo"
+                        src="/logo-nuevo.jpg"
+                        alt="InquiScore Logo"
                         style={{
-                            height: '55px',
+                            height: '110px',
                             width: 'auto',
-                            marginBottom: '1rem',
-                            filter: 'brightness(0) invert(1)'
+                            marginTop: '-30px',
+                            marginBottom: '-15px'
                         }}
                     />
                     <p style={{ opacity: 0.8, marginBottom: '1.5rem' }}>
@@ -472,7 +474,7 @@ export default function PricingPage() {
                         fontSize: '0.85rem',
                         opacity: 0.6
                     }}>
-                        © 2026 InquiCheck. Todos los derechos reservados.
+                        © 2026 InquiScore. Todos los derechos reservados.
                     </div>
                 </div>
             </footer>

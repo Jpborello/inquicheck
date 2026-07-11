@@ -111,7 +111,7 @@ export default function DashboardLayout({ children }) {
             {/* Sidebar */}
             <aside style={{
                 width: '260px',
-                background: 'var(--color-primary)',
+                background: '#000000',
                 color: 'white',
                 display: 'flex',
                 flexDirection: 'column',
@@ -119,13 +119,13 @@ export default function DashboardLayout({ children }) {
             }}>
                 <div style={{ marginBottom: '3rem', paddingLeft: '1rem' }}>
                     <img
-                        src="/logo.png"
-                        alt="InquiCheck Logo"
+                        src="/logo-nuevo.jpg"
+                        alt="InquiScore Logo"
                         style={{
-                            height: '50px',
+                            height: '110px',
                             width: 'auto',
-                            marginBottom: '0.5rem',
-                            filter: 'brightness(0) invert(1)' // Make logo white
+                            marginTop: '-30px',
+                            marginBottom: '-20px'
                         }}
                     />
                     <p style={{ opacity: 0.7, fontSize: '0.875rem' }}>Panel Inmobiliaria</p>

@@ -3,20 +3,20 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '3rem 0', marginTop: 'auto' }}>
+        <footer style={{ backgroundColor: '#000000', color: 'white', padding: '3rem 0', marginTop: 'auto' }}>
             <div className="container">
                 <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
                     <div>
-                        <img
-                            src="/logo.png"
-                            alt="InquiCheck Logo"
-                            style={{
-                                height: '60px',
-                                width: 'auto',
-                                marginBottom: '1rem',
-                                filter: 'brightness(0) invert(1)' // Make logo white
-                            }}
-                        />
+                    <img
+                        src="/logo-nuevo.jpg"
+                        alt="InquiScore Logo"
+                        style={{
+                            height: '120px',
+                            width: 'auto',
+                            marginTop: '-30px',
+                            marginBottom: '-15px'
+                        }}
+                    />
                         <p style={{ opacity: 0.8, maxWidth: '400px' }}>
                             Plataforma de verificación de inquilinos segura, confiable y conectada con fuentes oficiales.
                         </p>
@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
 
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.875rem', opacity: 0.8, flexWrap: 'wrap', gap: '1rem' }}>
-                    <p style={{ margin: 0 }}>&copy; {new Date().getFullYear()} InquiCheck. Todos los derechos reservados.</p>
+                    <p style={{ margin: 0 }}>&copy; {new Date().getFullYear()} InquiScore. Todos los derechos reservados.</p>
                     <div className="flex gap-md" style={{ gap: '1.5rem' }}>
                         <Link href="/terms" style={{ color: 'white', textDecoration: 'none', opacity: 0.8, transition: 'opacity 0.2s' }}
                             onMouseEnter={(e) => e.target.style.opacity = '1'}

@@ -1,4 +1,4 @@
-# InquiCheck
+# InquiScore
 
 System for real estate agencies to evaluate tenant scores. Built with Next.js 16.
 

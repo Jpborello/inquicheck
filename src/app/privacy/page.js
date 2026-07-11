@@ -6,7 +6,7 @@ export default function PrivacyPage() {
         <div style={{ minHeight: '100vh', background: '#f8f9fa' }}>
             {/* Header */}
             <header style={{
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: '#000000',
                 color: 'white',
                 padding: '2rem 0',
                 boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
@@ -18,12 +18,13 @@ export default function PrivacyPage() {
                 }}>
                     <Link href="/" style={{ display: 'inline-block', marginBottom: '1rem' }}>
                         <img
-                            src="/logo.png"
-                            alt="InquiCheck Logo"
+                            src="/logo-nuevo.jpg"
+                            alt="InquiScore Logo"
                             style={{
-                                height: '60px',
+                                height: '120px',
                                 width: 'auto',
-                                filter: 'brightness(0) invert(1)'
+                                marginTop: '-30px',
+                                marginBottom: '-25px'
                             }}
                         />
                     </Link>
@@ -51,7 +52,7 @@ export default function PrivacyPage() {
                     color: '#333'
                 }}>
                     <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: '#555' }}>
-                        En <strong>InquiCheck</strong>, nos tomamos muy en serio la privacidad y protección de tus datos personales. Esta política describe cómo recopilamos, utilizamos y protegemos tu información.
+                        En <strong>InquiScore</strong>, nos tomamos muy en serio la privacidad y protección de tus datos personales. Esta política describe cómo recopilamos, utilizamos y protegemos tu información.
                     </p>
 
                     <Section title="Información que recopilamos">
@@ -75,7 +76,7 @@ export default function PrivacyPage() {
                     </Section>
 
                     <Section title="Protección de datos">
-                        <p><strong>InquiCheck protege tu información mediante:</strong></p>
+                        <p><strong>InquiScore protege tu información mediante:</strong></p>
                         <ul>
                             <li>Cifrado de datos sensibles en tránsito y en reposo</li>
                             <li>Acceso restringido solo a personal autorizado</li>
@@ -96,7 +97,7 @@ export default function PrivacyPage() {
                     </Section>
 
                     <Section title="Consentimiento">
-                        <p>Al utilizar InquiCheck:</p>
+                        <p>Al utilizar InquiScore:</p>
                         <ul>
                             <li>Aceptás que tus datos sean utilizados conforme a esta política</li>
                             <li>Reconocés que los datos compartidos serán visibles para inmobiliarias habilitadas</li>
@@ -131,7 +132,7 @@ export default function PrivacyPage() {
                     <Section title="Retención de datos">
                         <p>Conservamos tus datos personales mientras:</p>
                         <ul>
-                            <li>Mantengas una cuenta activa en InquiCheck</li>
+                            <li>Mantengas una cuenta activa en InquiScore</li>
                             <li>Sea necesario para cumplir con obligaciones legales</li>
                             <li>Existan disputas legales pendientes</li>
                         </ul>
@@ -139,7 +140,7 @@ export default function PrivacyPage() {
                     </Section>
 
                     <Section title="Menores de edad">
-                        <p>InquiCheck <strong>no está dirigido a menores de 18 años</strong>. No recopilamos conscientemente información de menores. Si detectamos que un menor ha proporcionado datos personales, procederemos a eliminarlos de inmediato.</p>
+                        <p>InquiScore <strong>no está dirigido a menores de 18 años</strong>. No recopilamos conscientemente información de menores. Si detectamos que un menor ha proporcionado datos personales, procederemos a eliminarlos de inmediato.</p>
                     </Section>
 
                     <Section title="Cambios en esta política">
@@ -148,7 +149,7 @@ export default function PrivacyPage() {
                             <li>Aviso en la plataforma</li>
                             <li>Email a tu dirección registrada</li>
                         </ul>
-                        <p>El uso continuado de InquiCheck después de estos cambios constituye tu aceptación de la política actualizada.</p>
+                        <p>El uso continuado de InquiScore después de estos cambios constituye tu aceptación de la política actualizada.</p>
                     </Section>
 
                     <Section title="Contacto">
@@ -184,7 +185,7 @@ export default function PrivacyPage() {
 
             {/* Footer */}
             <footer style={{
-                background: '#1a1a1a',
+                background: '#000000',
                 color: 'white',
                 padding: '2rem 0',
                 marginTop: '3rem'
@@ -197,7 +198,7 @@ export default function PrivacyPage() {
                     fontSize: '0.9rem',
                     opacity: 0.7
                 }}>
-                    © 2026 InquiCheck. Todos los derechos reservados.
+                    © 2026 InquiScore. Todos los derechos reservados.
                 </div>
             </footer>
         </div>

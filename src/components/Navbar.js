@@ -3,10 +3,9 @@ import Link from 'next/link';
 export default function Navbar() {
     return (
         <nav style={{
-            background: 'linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 40%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0) 100%)',
-            color: 'var(--color-primary)',
+            background: '#000000',
+            color: 'white',
             padding: '1rem 0',
-            paddingBottom: '2rem',
             position: 'relative',
             zIndex: 10
         }}>
@@ -14,19 +13,21 @@ export default function Navbar() {
                 <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <img
                         src="/logo-nuevo.jpg"
-                        alt="InquiCheck Logo"
+                        alt="InquiScore Logo"
                         style={{
-                            height: '100px',
-                            width: 'auto'
+                            height: '160px',
+                            width: 'auto',
+                            marginTop: '-40px',
+                            marginBottom: '-40px'
                         }}
                     />
                 </Link>
 
                 <div className="flex items-center gap-md">
                     <div className="flex gap-md" style={{ fontSize: '0.9rem', fontWeight: '600' }}>
-                        <Link href="#como-funciona" style={{ color: 'var(--color-primary)' }}>Cómo Funciona</Link>
-                        <Link href="/pricing" style={{ color: 'var(--color-primary)' }}>Planes</Link>
-                        <Link href="#faq" style={{ color: 'var(--color-primary)' }}>Preguntas Frecuentes</Link>
+                        <Link href="#como-funciona" style={{ color: 'white' }}>Cómo Funciona</Link>
+                        <Link href="/pricing" style={{ color: 'white' }}>Planes</Link>
+                        <Link href="#faq" style={{ color: 'white' }}>Preguntas Frecuentes</Link>
                     </div>
 
                     <Link href="/login" className="btn" style={{
