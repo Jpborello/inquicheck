@@ -8,13 +8,11 @@ export default function Footer() {
                 <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
                     <div>
                     <img
-                        src="/logo-nuevo.jpg"
+                        src="/logo-nuevo.png"
                         alt="InquiScore Logo"
                         style={{
-                            height: '120px',
-                            width: 'auto',
-                            marginTop: '-30px',
-                            marginBottom: '-15px'
+                            height: '50px',
+                            width: 'auto'
                         }}
                     />
                         <p style={{ opacity: 0.8, maxWidth: '400px' }}>

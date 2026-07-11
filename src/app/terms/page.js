@@ -18,13 +18,11 @@ export default function TermsPage() {
                 }}>
                     <Link href="/" style={{ display: 'inline-block', marginBottom: '1rem' }}>
                         <img
-                            src="/logo-nuevo.jpg"
+                            src="/logo-nuevo.png"
                             alt="InquiScore Logo"
                             style={{
-                                height: '120px',
-                                width: 'auto',
-                                marginTop: '-30px',
-                                marginBottom: '-25px'
+                                height: '50px',
+                                width: 'auto'
                             }}
                         />
                     </Link>

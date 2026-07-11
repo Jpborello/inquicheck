@@ -12,13 +12,11 @@ export default function Navbar() {
             <div className="container flex justify-between items-center">
                 <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <img
-                        src="/logo-nuevo.jpg"
+                        src="/logo-nuevo.png"
                         alt="InquiScore Logo"
                         style={{
-                            height: '160px',
-                            width: 'auto',
-                            marginTop: '-40px',
-                            marginBottom: '-40px'
+                            height: '55px',
+                            width: 'auto'
                         }}
                     />
                 </Link>

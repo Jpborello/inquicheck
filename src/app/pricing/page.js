@@ -79,13 +79,11 @@ export default function PricingPage() {
                 }}>
                     <Link href="/" style={{ display: 'inline-block' }}>
                         <img
-                            src="/logo-nuevo.jpg"
+                            src="/logo-nuevo.png"
                             alt="InquiScore Logo"
                             style={{
-                                height: '90px',
-                                width: 'auto',
-                                marginTop: '-20px',
-                                marginBottom: '-20px'
+                                height: '40px',
+                                width: 'auto'
                             }}
                         />
                     </Link>
@@ -443,13 +441,11 @@ export default function PricingPage() {
                     textAlign: 'center'
                 }}>
                     <img
-                        src="/logo-nuevo.jpg"
+                        src="/logo-nuevo.png"
                         alt="InquiScore Logo"
                         style={{
-                            height: '110px',
-                            width: 'auto',
-                            marginTop: '-30px',
-                            marginBottom: '-15px'
+                            height: '45px',
+                            width: 'auto'
                         }}
                     />
                     <p style={{ opacity: 0.8, marginBottom: '1.5rem' }}>

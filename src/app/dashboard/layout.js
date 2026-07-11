@@ -119,13 +119,11 @@ export default function DashboardLayout({ children }) {
             }}>
                 <div style={{ marginBottom: '3rem', paddingLeft: '1rem' }}>
                     <img
-                        src="/logo-nuevo.jpg"
+                        src="/logo-nuevo.png"
                         alt="InquiScore Logo"
                         style={{
-                            height: '110px',
-                            width: 'auto',
-                            marginTop: '-30px',
-                            marginBottom: '-20px'
+                            height: '45px',
+                            width: 'auto'
                         }}
                     />
                     <p style={{ opacity: 0.7, fontSize: '0.875rem' }}>Panel Inmobiliaria</p>

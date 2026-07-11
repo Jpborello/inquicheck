@@ -46,13 +46,11 @@ export default function TermsModal({ onAccept }) {
                     textAlign: 'center'
                 }}>
                     <img
-                        src="/logo-nuevo.jpg"
+                        src="/logo-nuevo.png"
                         alt="InquiScore Logo"
                         style={{
-                            height: '100px',
-                            width: 'auto',
-                            marginTop: '-25px',
-                            marginBottom: '-15px'
+                            height: '45px',
+                            width: 'auto'
                         }}
                     />
                     <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700 }}>
